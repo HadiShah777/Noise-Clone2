@@ -65,7 +65,7 @@ header {
 }
 @media (width<480px) {
   #st-hero3 {
-    content: url(/imgs/hero-imgs/hero2.webp);
+    content: src(/imgs/hero-imgs/hero2.webp);
     object-fit: cover;
   }
 }
