@@ -33,7 +33,9 @@ body {
       transform: rotate(360deg);
   }
 }
-
+#content786{
+  display:block;
+}
 /* Loader noise */
 
 
