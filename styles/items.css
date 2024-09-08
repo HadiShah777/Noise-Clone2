@@ -83,7 +83,7 @@
   }
   .pre-item-price {
     color: gray;
-    font-size: medium;
+    font-size: smaller;
   }
   .rating {
     display: flex;
