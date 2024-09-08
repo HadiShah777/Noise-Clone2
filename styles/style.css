@@ -563,7 +563,7 @@ h2 {
 /* --------hr Fun Begins-------- */
 .fun-hr {
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   background: repeating-linear-gradient(
     to right,
     rgb(56, 56, 85) 10px,

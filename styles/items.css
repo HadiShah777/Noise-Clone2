@@ -15,6 +15,9 @@
     overflow:hidden;
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   }
+  .item-box p{
+    margin-left: 0;
+  }
   .font-lg-rb {
     letter-spacing: 2px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -83,7 +86,9 @@
   }
   .pre-item-price {
     color: gray;
-    font-size: smaller;
+    font-size: x-small;
+    display: flex;
+    align-self: flex-end;
   }
   .rating {
     display: flex;
