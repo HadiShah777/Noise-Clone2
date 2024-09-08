@@ -84,7 +84,7 @@
     border: 1px solid black;
     border-radius: 50%;
   }
-  .pre-item-price {
+   .pre-item-price {
     color: gray;
     font-size: x-small;
     display: flex;
@@ -93,6 +93,13 @@
   .rating {
     display: flex;
     justify-content: space-between;
+  }
+  @media (width > 500px){
+    .item-box .pre-item-price {
+      font-size: xx-small;
+      display: flex;
+      align-self: flex-end;
+    }
   }
   @media (width < 482px) {
     .items-section {
