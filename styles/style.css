@@ -1,0 +1,589 @@
+body {
+  /* NO TEXT COPY */
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  /* NO TEXT COPY */
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+/* Loader noise */
+#loader786{
+  width: 50px;
+  height: 50px;
+  transition: 1s ease-in;
+  filter: invert(100%);
+  margin-top: 50vh;
+  margin-left: 50vw;
+}
+#loader786 img{
+  filter: invert(100%);
+  animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+/* Loader noise */
+
+
+/* Nav to Header Start */
+header {
+  background-color: black;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 1px;
+  left: 0;
+}
+#icon-img {
+  align-items: center;
+  /* margin-top: 2%; */
+  /* margin-bottom: 2%; */
+  margin-left: 15px;
+  cursor: pointer;
+  object-fit: cover;
+}
+.hero-img {
+  width: 100%;
+  cursor: pointer;
+}
+@media (width<480px) {
+  #st-hero3 {
+    content: url(/imgs/hero-imgs/hero2.webp);
+    object-fit: cover;
+  }
+}
+.side-img {
+  height: auto;
+  width: 55px;
+  margin-top: 2%;
+  cursor: pointer;
+  margin-right: 2px;
+}
+nav ul {
+  /* align-items: center; */
+  text-decoration: none;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding-bottom: 10px;
+  width: max-content;
+  &:hover {
+    border-bottom: 2px solid white;
+    transition: 100ms ease-in-out;
+    width: max-content;
+    color: rgb(141, 136, 136);
+  }
+}
+nav li {
+  float: left;
+  color: white;
+  list-style: none;
+  margin: 10px 32px;
+  margin-top: auto;
+  /* padding: 5px 15px; */
+  font-size: large;
+  cursor: pointer;
+  /* transition: 0.3s ease; */
+}
+/* Nav to Header End */
+
+/* Types of Items Start */
+.types_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.category {
+  height: 90px;
+  margin: 7px;
+}
+#Categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Categories div p {
+  margin: 20px;
+}
+
+@media (width < 800px) {
+  .hero-img {
+    margin-top: 35px;
+  }
+  .category {
+    height: 30px;
+  }
+  #Categories div p {
+    display: none;
+  }
+  .space-matters {
+    font-size: larger;
+    font-weight: 800;
+  }
+  .space-matters a {
+    font-size: smaller;
+    font-weight: 100;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .types_div img {
+    width: 60px;
+    height: 60px;
+  }
+  .types_div p {
+    display: none;
+  }
+}
+@media (width<450px) {
+  .types_div img {
+    width: 30px;
+    height: 30px;
+  }
+  .types_div p {
+    display: none;
+  }
+}
+@media (width<320px) {
+  .types_div img {
+    width: 15px;
+    height: 15px;
+  }
+  .types_div p {
+    display: none;
+  }
+}
+@media (width<919px) {
+  header nav {
+    display: none;
+  }
+}
+/* Types of Items End */
+
+/* Hot-Selling Gadgets */
+.space-matters {
+  margin: 20px;
+  font-size: larger;
+  font-weight: 800;
+  display: flex;
+  text-align: left;
+  margin: 20px;
+}
+.space-matters a {
+  font-weight: 400;
+  margin-left: 25px;
+  cursor: pointer;
+  color: purple;
+  font-size: small;
+  display: flex;
+  align-items: end;
+}
+/* Hot-Selling Gadgets */
+
+/* ----Items List Start--------------*/
+/* ---- styles/items.css----- */
+/*-----Items List End-------------*/
+
+/* --------Featured Collection Begin-------- */
+.featured_main {
+  display: flex;
+}
+.featured_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.featured_row span {
+  border: 1px s black;
+}
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  height: max-content;
+  margin: 5px;
+}
+.vertical {
+  transform: rotate(90deg);
+  margin-right: 35px;
+}
+@media (width<1300px) {
+  .hr {
+    display: none;
+  }
+}
+@media (width<1050px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex: wrap;
+  }
+  .featured_main {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  p {
+    font-size: larger;
+    margin-left: 30px;
+  }
+  .featured_row {
+    display: flex;
+  }
+  main .featured_main div img {
+    width: 100vw;
+  }
+}
+@media (width=768px) {
+  main .featured_main div img {
+    width: 100vw;
+  }
+  .featured_row {
+    width: 100vw;
+  }
+}
+/* --------Featured Collection End-------- */
+
+/* --------Sign Up Form Starts-------- */
+.featured-main-last {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* float: right; */
+}
+#main-heading-noise {
+  font-size: 5em;
+  font-weight: bolder;
+  padding-bottom: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+@media (width<455px) {
+  #main-heading-noise {
+    font-size: large;
+  }
+  #form p {
+    font-size: xx-small;
+  }
+}
+#form p {
+  margin: 0;
+}
+input {
+  border: none;
+  border-bottom: 2px solid rgb(72, 71, 71); /* for increasing boder bottom */
+  margin: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  padding-bottom: 0px;
+  font-size: 1em;
+}
+input:focus {
+  outline: none; /* romoves border even when u clicked to write something */
+}
+#signup-btn {
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  transition: 0.5s ease-out;
+  &:hover {
+    background-color: black;
+    color: white;
+    padding-right: 25px;
+  }
+}
+
+#signup-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#signup-btn span::after {
+  content: "◉_◉";
+  position: relative;
+  opacity: 0;
+  top: 0;
+  left: 8px;
+  right: -22px;
+  transition: 0.5s ease-out;
+}
+#signup-btn:hover span {
+  padding-right: 15px;
+}
+#signup-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+input::after {
+  border: none;
+}
+#model-img {
+  width: 650px;
+}
+@media (width<1100px) {
+  #model-img {
+    width: 100vw;
+  }
+  input {
+    margin: 20px;
+    width: 100px;
+    padding: 5px;
+  }
+  #email {
+    font-size: 0.5em;
+  }
+  #main-heading-noise {
+    font-size: 2em;
+    margin-bottom: 7px;
+  }
+}
+@media (width<450px) {
+  input {
+    margin: 10px;
+    width: 50px;
+    padding: 5px;
+    font-size: 0.5em;
+  }
+  #email {
+    font-size: 0.3em;
+  }
+  #main-heading-noise {
+    font-size: 1em;
+    margin-bottom: 2px;
+  }
+  #form p {
+    margin-top: 5px;
+  }
+  #signup-btn {
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 0.5em;
+    transition: 0.5s ease-out;
+    &:hover {
+      background-color: black;
+      color: white;
+      padding-right: 5px;
+    }
+  }
+  #signup-btn span::after {
+    content: "◉_◉";
+    position: relative;
+    opacity: 0;
+    top: 0;
+    left: 4px;
+    right: -22px;
+    transition: 0.5s ease-out;
+  }
+  #signup-btn:hover span {
+    padding-right: 3px;
+  }
+}
+/* --------Sign Up Form Ends-------- */
+
+/* --------Video Addverstisement Start-------- */
+.add-bg-black {
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+}
+@media (width<650px) {
+  .add-bg-black #virat {
+    display: none;
+  }
+  #virat2 {
+    display: block;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+@media (width>650px) {
+  #virat {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  #virat2 {
+    display: none;
+  }
+}
+/* --------Video Addverstisement End-------- */
+
+/* -------- BLOGS SLIDER START-------- */
+/* ----------- COMING SOON -------- */
+.coming-soon {
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coming-soon span {
+  font-size: 40px;
+  display: block;
+  font-weight: 900;
+  &:hover{
+    font-size: 60px;
+    transition: 1s ease-in-out;
+  }
+}
+@media (width < 600px) {
+  .coming-soon {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+  }
+  .coming-soon span {
+    font-size: 20px;
+  }
+}
+@media (width > 1023px) {
+  .coming-soon span {
+    font-size: 60px;
+    transition: 1s ease-in-out;
+  display: block;
+
+    &:hover{
+      font-size: 110px;
+      transition: 1s ease-in-out;
+    }
+  }
+}
+/* ----------- COMING SOON -------- */
+/* -------- BLOGS SLIDER END-------- */
+
+/* --------Social Media Start-------- */
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  text-decoration: none;
+  color: #484848;
+  font-size: 27px;
+  transition: 0.3s ease-in;
+}
+.social-icon .fab {
+  transition: 0.3s ease-in;
+}
+.social-icon .fa-instagram:hover {
+  color: #c13584;
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+.social-icon .fa-twitter:hover {
+  color: #0080ff;
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon .fa-facebook:hover {
+  color: #0022ff;
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon .fa-youtube:hover {
+  color: #ff0000;
+  transform: scale(1.3);
+}
+
+/* .social-icon i {
+  vertical-align: middle;
+} */
+/* --------Social Media End-------- */
+
+/* --------Footer + Copyright-------- */
+#footer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.giving {
+  margin: 30px;
+  margin-left: 25%;
+  width: 50vw;
+}
+
+#copycat {
+  text-align: center;
+}
+/* --------Footer + Copyright-------- */
+
+/* --------hr Fun Begins-------- */
+.fun-hr {
+  width: 100%;
+  height: 10vh;
+  background: repeating-linear-gradient(
+    to right,
+    rgb(56, 56, 85) 10px,
+    rgb(255, 255, 255) 10px,
+    rgb(57, 57, 85) 10px,
+    rgb(255, 255, 255) 80px
+  );
+  border: none;
+  position: relative;
+  margin: 0;
+  background-size: 200% 100%;
+  /* transition: 1s  ease; */
+  animation: snake-style 4s linear infinite;
+  transition: 3s ease-in-out;
+  &:hover {
+    animation: snake-style 1s linear infinite;
+  }
+}
+@keyframes snake-style {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+/* --------hr Fun End-------- */
