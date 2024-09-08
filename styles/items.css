@@ -89,7 +89,7 @@
     display: flex;
     justify-content: space-between;
   }
-  @media (width < 432px) {
+  @media (width < 482px) {
     .items-section {
       display: flex;
       flex-wrap: wrap;
@@ -105,28 +105,33 @@
       width: 150px;
       object-fit: cover;
     }
+    .rating h4{
+      display: none;
+    }
     /* .font-lg-rb{
       font-size: smaller;
     } */
   }
   
-  @media (width < 391px) {
+  @media (width < 395px) {
     .items-section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
     .item-box {
-      width: 100px;
+      width: 115px;
     }
     .item-box h2,
     h3,
     h4,
     p {
-      font-size: small;
+      font-size: smaller;
     }
     .item-box .pre-item-price {
-      font-size: x-small;
+      font-size: xx-small;
+      display: flex;
+      align-self: flex-end;
     }
     .hot-selling-item-imgs {
       width: 100px;

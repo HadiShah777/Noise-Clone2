@@ -13,7 +13,7 @@ body {
 }
 
 /* Loader noise */
-#loader786{
+/* #loader786{
   width: 50px;
   height: 50px;
   transition: 1s ease-in;
@@ -32,7 +32,7 @@ body {
   100%{
       transform: rotate(360deg);
   }
-}
+} */
 #content786{
   display:block;
 }
@@ -65,7 +65,7 @@ header {
 }
 @media (width<480px) {
   #st-hero3 {
-    content: src(/imgs/hero-imgs/hero2.webp);
+    content: src('/imgs/hero-imgs/hero2.webp');
     object-fit: cover;
   }
 }
