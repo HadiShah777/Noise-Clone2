@@ -12,6 +12,7 @@
     border-radius: 5px;
     background: linear-gradient(to top, white, rgb(239, 239, 239));
     margin: 5px;
+    overflow:hidden;
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   }
   .font-lg-rb {
