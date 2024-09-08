@@ -108,6 +108,10 @@
     .rating h4{
       display: none;
     }
+    .item-box .pre-item-price {
+      display: flex;
+      align-self: flex-end;
+    }
     /* .font-lg-rb{
       font-size: smaller;
     } */
