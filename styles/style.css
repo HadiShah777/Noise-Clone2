@@ -14,7 +14,7 @@ body {
 
 /* Loader noise */
 
-/* #loader786{
+#loader786{
   width: 50px;
   height: 50px;
   transition: 1s ease-in;
@@ -33,11 +33,22 @@ body {
   100%{
       transform: rotate(360deg);
   }
-} */
+}
 #content786{
-  display:block;
+  display: content;
+  animation: goku 1000ms linear;
 }
 
+@keyframes goku {
+  from{
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* Loader noise */
 
 
@@ -210,6 +221,11 @@ nav li {
 /* --------Featured Collection Begin-------- */
 .featured_main {
   display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .featured_row {
   display: flex;
@@ -218,13 +234,13 @@ nav li {
 .featured_row span {
   border: 1px s black;
 }
-main {
+/* main {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 hr {
   height: max-content;
   margin: 5px;
@@ -239,15 +255,19 @@ hr {
   }
 }
 @media (width<1050px) {
-  main {
+  /* main {
     display: flex;
     align-items: center;
     justify-items: center;
     flex: wrap;
-  }
+  } */
   .featured_main {
     flex-wrap: wrap;
     align-items: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex: wrap;
   }
   p {
     font-size: larger;
