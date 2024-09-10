@@ -76,11 +76,17 @@ header {
   width: 100%;
   cursor: pointer;
 }
-@media (width<480px) {
-  #st-hero3 {
-    content: src('/imgs/hero-imgs/hero2.webp');
+#heros2{
+  display: none;
+}
+@media (width<600px) {
+  #heros2{
+    display: block;
     object-fit: cover;
   }
+  #heros{
+    display: none;
+   }
 }
 .side-img {
   height: auto;
