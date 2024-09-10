@@ -1,6 +1,14 @@
+/* less 600px width Images property as default Start */
 #heros2{
   display: none;
 }
+#Luna-Ring2{
+  display: none;
+}
+#strap2{
+  display: none;
+}
+/* less 600px width Images property as default End */
 body {
   /* NO TEXT COPY */
   user-select: none;
@@ -79,6 +87,7 @@ header {
   width: 100%;
   cursor: pointer;
 }
+/* Responsive Luna, Strap and Hero imgs Start */
 @media (width<600px) {
   #heros2{
     display: block;
@@ -86,8 +95,21 @@ header {
   }
   #heros{
     display: none;
-   }
+  }
+  #Luna-Ring{
+    display: none;
+  }
+  #Luna-Ring2{
+    display: block;
+  }
+  #strap{
+    display: none;
+  }
+  #strap2{
+    display: block;
+  }
 }
+/* Responsive Luna, Strap and Hero imgs End */
 .side-img {
   height: auto;
   width: 55px;
