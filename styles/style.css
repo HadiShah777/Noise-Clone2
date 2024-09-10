@@ -1,3 +1,6 @@
+#heros2{
+  display: none;
+}
 body {
   /* NO TEXT COPY */
   user-select: none;
@@ -75,9 +78,6 @@ header {
 .hero-img {
   width: 100%;
   cursor: pointer;
-}
-#heros2{
-  display: none;
 }
 @media (width<600px) {
   #heros2{
