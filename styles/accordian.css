@@ -1,5 +1,6 @@
 .accordion-container {
   width: 100%;
+  overflow: hidden;
   margin: 25px auto;
   font-family: Verdana;
 }
