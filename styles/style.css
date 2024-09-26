@@ -9,10 +9,6 @@
   display: none;
 }
 /* less 600px width Images property as default End */
-html{
-  display: flex;
-  justify-content: center;
-}
 body {
   /* NO TEXT COPY */
   user-select: none;
@@ -22,11 +18,9 @@ body {
   /* NO TEXT COPY */
   margin: 0;
   padding: 0;
-  width: 100%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  max-width: 1500px;
 }
 /* Loader noise */
 
