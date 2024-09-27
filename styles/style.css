@@ -18,7 +18,7 @@ body {
   /* NO TEXT COPY */
   margin: 0;
   padding: 0;
-  /* width: 100%; */
+  width: 100%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
@@ -155,29 +155,37 @@ nav li {
 .types_div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
+  overflow: hidden;
+  /* scrollbar-width: none; */
 }
 .category {
   height: 90px;
-  margin: 7px;
+  margin: 5px;
 }
 #Categories {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#Categories div p {
-  margin: 20px;
-}
 
 @media (width < 800px) {
+  .types_div {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
   .hero-img {
     margin-top: 35px;
   }
   .category {
-    height: 30px;
+    margin: 0.6rem;
   }
+  /* 
   #Categories div p {
     display: none;
   }
@@ -198,18 +206,18 @@ nav li {
   }
   .types_div p {
     display: none;
-  }
+  } */
 }
 @media (width<450px) {
-  .types_div img {
+  /* .types_div img {
     width: 30px;
     height: 30px;
   }
   .types_div p {
     display: none;
-  }
+  } */
 }
-@media (width<320px) {
+/* @media (width<320px) {
   .types_div img {
     width: 15px;
     height: 15px;
@@ -217,7 +225,7 @@ nav li {
   .types_div p {
     display: none;
   }
-}
+} */
 @media (width<919px) {
   header nav {
     display: none;
@@ -378,7 +386,7 @@ input:focus {
   &:hover {
     background-color: black;
     color: white;
-    padding-right: 25px;
+    /* padding-right: 25px; */
   }
 }
 
@@ -431,11 +439,10 @@ input::after {
   input {
     margin: 10px;
     width: 50px;
-    padding: 5px;
-    font-size: 0.5em;
+    padding: 3px;
   }
   #email {
-    font-size: 0.3em;
+    font-size: 0.5em;
   }
   #main-heading-noise {
     font-size: 1em;
@@ -447,7 +454,7 @@ input::after {
   #signup-btn {
     background-color: white;
     padding: 5px 10px;
-    font-size: 0.5em;
+    font-size: 0.6em;
     transition: 0.5s ease-out;
     &:hover {
       background-color: black;
